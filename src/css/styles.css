@@ -4,15 +4,51 @@
   | default @import url()
   |============================
 */
-/* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./snack.css');
+@import url('./timer.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.ul {
+  padding: 30px 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2aaf0d;
+  color: blanchedalmond;
+}
+
+body {
+  background-color: #6100bb;
+}
+
+h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  transform: translate(-50%, -50%);
+}
+
+h1::after {
+  content: '';
+  width: 100%;
+  background-color: #fff;
+  height: 10px;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
