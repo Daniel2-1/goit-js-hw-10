@@ -93,5 +93,3 @@ function updateDate(timeDiff) {
   spanMinutes.textContent = minutes.toString().padStart(2, '0');
   spanSeconds.textContent = seconds.toString().padStart(2, '0');
 }
-
-console.log('s');
