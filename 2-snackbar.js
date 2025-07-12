@@ -1,2 +1,2 @@
 import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import{i as s}from"./assets/vendor-BbbuE1sJ.js";const n=document.querySelector('input[type="number"]'),l=document.querySelector("form");function u(t,e){return new Promise((r,o)=>{setTimeout(()=>{t==="fulfilled"?r(e):o(e)},e)})}l.addEventListener("submit",t=>{t.preventDefault();const e=parseInt(n.value),o=document.querySelector('input[type="radio"]:checked').value;u(o,e).then(i=>{s.show({title:"✅",message:`Fulfilled promise in ${i}ms`,messageColor:"white",backgroundColor:"#57E29A",position:"topRight"})}).catch(i=>{s.show({title:"❌",message:`Rejected promise in ${i}ms`,messageColor:"white",backgroundColor:"#E25757",position:"topRight"})})});
-//# sourceMappingURL=1-snackbar.js.map
+//# sourceMappingURL=2-snackbar.js.map
